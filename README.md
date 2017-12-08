@@ -2,7 +2,7 @@
 
 ![servant](https://raw.githubusercontent.com/haskell-servant/servant/master/servant.png)
 
-This package allows you to use [blaze-html](http://hackage.haskell.org/package/blaze-html-0.8.0.0/docs/Text-Blaze-Html5.html) to serve html pages in your servant APIs. More specifically, it exports a `HTML` datatype with the correct `MimeRender` instances so that you can write `type myAPI = Get '[HTML] a`.
+This package allows you to use [blaze-html](http://hackage.haskell.org/package/blaze-html-0.8.0.0/docs/Text-Blaze-Html5.html) to serve html pages in your servant APIs. More specifically, it exports a `HTML` datatype with the correct `MimeRender` instances so that you can write `type API = Get '[HTML] User` for example.
 
 ## Minimal example:
 
