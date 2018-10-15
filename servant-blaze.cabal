@@ -1,6 +1,6 @@
 name:                servant-blaze
 version:             0.8
-x-revision:          1
+x-revision:          2
 synopsis:            Blaze-html support for servant
 description:
   Servant support for blaze-html
@@ -17,11 +17,12 @@ build-type:          Simple
 cabal-version:       >=1.10
 bug-reports:         http://github.com/haskell-servant/servant-blaze/issues
 tested-with:
-  GHC==7.8.4,
-  GHC==7.10.3,
-  GHC==8.0.2,
-  GHC==8.2.2,
-  GHC==8.4.3
+  GHC ==7.8.4
+   || ==7.10.3
+   || ==8.0.2
+   || ==8.2.2
+   || ==8.4.4
+   || ==8.6.1
 
 source-repository head
   type: git
