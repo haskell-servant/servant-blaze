@@ -19,12 +19,15 @@ import qualified Network.HTTP.Media            as M
 import           Servant.API                   (Accept (..), MimeRender (..))
 import           Text.Blaze.Html               (Html, ToMarkup, toHtml)
 import           Text.Blaze.Html.Renderer.Utf8 (renderHtml)
+import qualified Data.List.NonEmpty            as NE
 
 data HTML deriving Typeable
 
 -- | @text/html;charset=utf-8@
 instance Accept HTML where
-    contentType _ = "text" M.// "html" M./: ("charset", "utf-8")
+    contentTypes _ =
+      "text" M.// "html" M./: ("charset", "utf-8") NE.:|
+      ["text" M.// "html"]
 
 instance ToMarkup a => MimeRender HTML a where
     mimeRender _ = renderHtml . toHtml
