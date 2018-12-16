@@ -1,7 +1,6 @@
 cabal-version:       >=1.10
 name:                servant-blaze
-version:             0.8
-x-revision:          2
+version:             0.9
 
 synopsis:            Blaze-html support for servant
 category:            Servant, Web
@@ -19,12 +18,10 @@ maintainer:          haskell-servant-maintainers@googlegroups.com
 copyright:           2015-2018 Servant Contributors
 build-type:          Simple
 tested-with:
-  GHC ==7.8.4
-   || ==7.10.3
-   || ==8.0.2
+  GHC ==8.0.2
    || ==8.2.2
    || ==8.4.4
-   || ==8.6.2
+   || ==8.6.3
 
 source-repository head
   type: git
@@ -32,8 +29,8 @@ source-repository head
 
 library
   exposed-modules:     Servant.HTML.Blaze
-  build-depends:       base       >=4.7     && <5
-                     , servant    >=0.7     && <0.16
+  build-depends:       base       >=4.9     && <5
+                     , servant    >=0.10     && <0.16
                      , http-media >=0.6.4   && <0.8
                      , blaze-html >=0.9.0.1 && <0.10
   hs-source-dirs:      src
