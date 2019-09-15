@@ -22,7 +22,8 @@ tested-with:
   GHC ==8.0.2
    || ==8.2.2
    || ==8.4.4
-   || ==8.6.3
+   || ==8.6.5
+   || ==8.8.1
 extra-source-files: CHANGELOG.md
 
 source-repository head
@@ -51,5 +52,5 @@ test-suite example
     , servant-blaze
     , servant-server >=0.4.4.5  && <0.17
     , wai            >=3.0.3.0  && <3.3
-    , warp           >=3.0.13.1 && <3.3
+    , warp           >=3.0.13.1 && <3.4
   default-language: Haskell2010
