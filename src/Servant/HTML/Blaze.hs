@@ -6,8 +6,8 @@
 
 -- | An @HTML@ empty data type with `MimeRender` instances for @blaze-html@'s
 -- `ToMarkup` class and `Html` datatype.
--- You should only need to import this module for it's instances and the
--- `HTML` datatype.:
+-- You should only need to import this module for its instances and the
+-- `HTML` datatype:
 --
 -- >>> type Eg = Get '[HTML] a
 --
